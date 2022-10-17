@@ -1,0 +1,27 @@
+.form {
+    background: url("img/chad-montano-MqT0asuoIcU-unsplash.jpg");
+}
+
+.titre_1{
+    font-size: 40px;
+    font-style:italic;
+    color: red;
+    text-align: center;
+}
+
+.titre_2{
+    font-size: 40px;
+    font-style:italic;
+    color: rgb(19, 60, 197);
+    text-align: center;
+}
+
+
+.form-check {
+    margin-left: 670px;
+}
+
+
+.btn-outline-primary{
+    margin-left: 700px;
+}

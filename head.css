@@ -1,0 +1,295 @@
+/*header*/
+.header {
+    height: 450px ;
+    width: 100%;
+    background: rgb(161, 123, 230);
+    position: relative;
+}
+.header__texture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background: url('img/pizza.jpg') center no-repeat;
+    background-size: cover;
+    z-index: 1;
+    opacity: 0.6;
+}
+.header__mask {
+    position: absolute;
+    bottom: 0;
+    background: 0 0;
+    height: 42px;
+    width: 100%;
+    z-index: 10;
+}
+
+.header__navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__navbar--logo-title {
+    font-size: 26px;
+
+}
+.header .nav__bar--menu .header__navbar--menu-link {
+    margin-left: 40px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__navbar--menu-link:hover {
+    color: rgb(235, 35, 35);
+    text-decoration: underline;
+    font-size: 28px;
+    opacity: 0.6;
+}
+.header__slogan {
+    text-align: center;
+    margin-top: 50px;
+}
+.h__slogan--title {
+    color: #c1ff04;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'Hanalei';
+    letter-spacing: 2px;
+}
+.h__slogan-title2 {
+    color:#04ff80;
+    font-size: 35px;
+    font-style: italic;
+    font-family: "Indie Flower";
+}
+.h__slogan--btn {
+    color: #fff;
+    font-size: 15px;
+    font-style: italic;
+    text-decoration: none;
+    padding: 15px 20px;
+    background: #c0392b;
+    border-radius: 20px;
+}
+.header__slogan .h__slogan--btn :hover {
+    opacity: 0.5;
+}
+.main {
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    z-index: 10;
+    opacity: 0.9;
+}
+
+/* navigation menu */
+
+.section-menu {
+    justify-content: center;
+    transform: translateY(-130px);
+    display: flex;
+    flex-direction: row;
+}
+
+nav.menu {
+    width: calc(500px * 4);
+}
+
+nav.menu ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav.menu ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s all;
+}
+
+nav.menu ul li:hover {
+    transform: scale(0.90);
+    transition: 0.3s all;
+}
+
+nav.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.nav-item {
+    flex: 1;
+    height: 300px;
+}
+
+.pizza {
+    background: url(img/pizza-banner.jpg) 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item a:hover {
+    font-size: 20px;
+    color: red;
+    text-decoration: underline;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 20px;
+}
+
+
+.salade {
+    background: url(img/salad-banner.jpg) 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.burger {
+    background: url(img/burger-banner.jpg) 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.boisson {
+    background: url(img/boisson-banner.jpg) 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* sections plats */
+
+.item {
+    background-color: white;
+    margin: 20px;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s all;
+    width: 50%;
+}
+
+.item:hover {
+    transform: scale(1.1);
+   /* transition: 0.3s all;*/
+}
+
+.item:hover {
+    transition: 0.3s all;
+    box-shadow: -8px 8px 2px 1px rgba(0, 0, 0, .1);
+}
+
+.item-infos {
+    padding: 20px;
+    line-height: 40px;
+}
+
+section {
+    padding: 100px;
+    font-family: 'Martel', serif;
+}
+
+.item-infos h3 {
+    font-size: 25px;
+}
+.item-infos hr {
+    margin: 10px 0 10px 0;
+    opacity: 0.5;
+}
+
+p.prix {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+section img {
+    width: 300px;
+}
+
+
+.item .h__slogan--btn2{
+    transform: translateX(0);
+    opacity:0.8;
+    width: 10%;
+    color: #fff;
+    font-size: 15px;
+    font-style: italic;
+    text-decoration: none;
+    padding: 1px 20px;
+    background: #c0392b;
+    border-radius: 20px;
+
+}
+.item .h__slogan--btn2 {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    height: 50%;
+    width: 50%;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(100%);
+    opacity: 1;
+}
+
+/* menu bloqué à droite */
+
+.sticky {
+    position: fixed;
+    width: 500px;
+    top: 30vh;
+    right: 50px;
+    transform: translateY(10px);
+    transition: 0.6s all;
+}
+
+.sticky + #main {
+    padding-top: 200px;
+}
+
+.sticky nav.menu ul {
+    flex-direction: column;
+}
+
+.sticky, nav.menu ul li {
+    margin: 2px;
+}
+.h__slogan--btn1 {
+    color: #fff;
+    font-size: 15px;
+    font-style: italic;
+    text-decoration: none;
+    padding: 15px 20px;
+    background: #f71a01;
+    border-radius: 20px;
+    margin-left: 575px;
+}
+.h__slogan--btn_p {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(253, 240, 121);
+    font-style: italic;
+}
+/* pied de page */
+
+footer p {
+    font-size: 22px;
+    text-align: center;
+    color: rgb(109, 52, 202);
+    padding: 20px;
+    font-family: 'Martel', serif;
+}
